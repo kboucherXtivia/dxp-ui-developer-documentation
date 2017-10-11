@@ -25,6 +25,7 @@ To omit elements when a data item has no content use the `has_content` property 
 Though, structures allow you to define a `boolean` type field, the value that is passed to the template is actually a string. Two ways to handle this situation are:
 
 1. Compare to string value:
+
 ```
 <#if HorizontalRule.data == "true">
     ...
@@ -32,12 +33,12 @@ Though, structures allow you to define a `boolean` type field, the value that is
 ```
 2. Use `getterUtil`:
 
-Using `getterUtil.getBoolean()` method will convert the value to `boolean` type for conditional comparison.
 ```
 <#if getterUtil.getBoolean(HorizontalRule.data)>
     ...
 </#if>
 ```
+Using `getterUtil.getBoolean()` method will convert the value to `boolean` type for conditional comparison.
 
 ### Separators
 
