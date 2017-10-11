@@ -58,3 +58,5 @@ To loop over defined items marked as `Repeatable: Yes` in your structure, use th
     <p>${cur_Item.Body.data}</p>
 </#list>
 ```
+
+[comment]: # (This is a commented addition to invoke a change for merge request test)
