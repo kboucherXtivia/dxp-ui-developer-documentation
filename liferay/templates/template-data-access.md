@@ -48,3 +48,13 @@ When grouping fields into a `Separator` you can reference the children as expect
     ${SectionButton.Label.data}
 </a>
 ```
+
+### Repeatables
+
+To loop over defined items marked as `Repeatable: Yes` in your structure, use the `getSiblings()` method:
+```
+<#list RepeatableItem.getSiblings() as cur_Item>
+    <h2>${cur_Item.Title.data}</h2>
+    <p>${cur_Item.Body.data}</p>
+</#list>
+```
