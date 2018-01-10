@@ -60,3 +60,19 @@ To loop over defined items marked as `Repeatable: Yes` in your structure, use th
 ```
 
 [comment]: # (This is a commented addition to invoke a change for merge request test)
+
+## Getting Content IDs
+
+### In Web Content Templates
+```
+.vars["reserved-article-id"].data
+```
+
+## Getting Page Categories
+```
+<#assign CategoryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetCategoryLocalService") />
+<#assign page = themeDisplay.getLayout() />
+<#assign primKey = page.getPrimaryKey() />
+<#assign pageCats = CategoryLocalService.getCategories("com.liferay.portal.kernel.model.Layout", primKey) />
+${pageCats?size}
+```
