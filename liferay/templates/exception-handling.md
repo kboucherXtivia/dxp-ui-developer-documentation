@@ -2,6 +2,7 @@
 
 Use FreeMarker's `attempt/recover` block to gracefully handle template exceptions:
 
+```
 <#attempt>
     <#assign is_full_width = page.getExpandoBridge().getAttribute("is-full-width-layout") />
 <#recover>
@@ -11,3 +12,4 @@ Use FreeMarker's `attempt/recover` block to gracefully handle template exception
     </p>
     <#assign is_full_width = false>
 </#attempt>
+```
