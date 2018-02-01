@@ -40,6 +40,11 @@ Though, structures allow you to define a `boolean` type field, the value that is
 ```
 Using `getterUtil.getBoolean()` method will convert the value to `boolean` type for conditional comparison.
 
+### Link to Page
+```
+LinkToPage.getFriendlyUrl()
+```
+
 ### Separators
 
 When grouping fields into a `Separator` you can reference the children as expected:
