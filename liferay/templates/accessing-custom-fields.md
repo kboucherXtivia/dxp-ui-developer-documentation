@@ -6,4 +6,4 @@
 
 ## From a Page Context
 
-page.getLayout().getExpandoBridge().getAttribute("is-something")
+page.getExpandoBridge().getAttribute("is-something")
