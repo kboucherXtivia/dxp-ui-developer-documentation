@@ -7,7 +7,7 @@
 
 # Helper Functions & Macros
 
-1. [Prevent Orphans](./helpers/prevent-orphans.md)
+1. [Prevent Widows](./helpers/prevent-widows.md)
 
 # Helpful Resources
 

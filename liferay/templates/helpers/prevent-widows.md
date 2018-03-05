@@ -1,11 +1,11 @@
-# Prevent Orphans
+# Prevent Widows
 
-Prevents orphans in HTML content by wrapping the last two words of string in a span that can have `white-space: nowrap;` applied to it. Alternately can be used in conjunction with a trailing icon element, in which case the `nowrap` span will be wrapped around the last word and the passed-in icon element.
+Prevents widows in HTML content by wrapping the last two words of string in a span that can have `white-space: nowrap;` applied to it. Alternately can be used in conjunction with a trailing icon element, in which case the `nowrap` span will be wrapped around the last word and the passed-in icon element.
 
 _Note: Default `nowrap` class is Bootstrap's "text-nowrap" class: [https://getbootstrap.com/docs/3.3/css/#type-alignment](https://getbootstrap.com/docs/3.3/css/#type-alignment). To override this class, pass the desired class name as a parameter._
 
 ## Example Usage
-`<@preventOrphans text="Link to my web page" icon='<i class="icon icon-chevron-right"></i>' />`
+`<@preventWidows text="Link to my web page" icon='<i class="icon icon-chevron-right"></i>' />`
 
 Outputs: `Link to my web <span class="text-nowrap">page <i class="icon icon-chevron-right"></i></span>`
 
@@ -13,7 +13,7 @@ Outputs: `Link to my web <span class="text-nowrap">page <i class="icon icon-chev
 
 Copy this into your template, or add to your helpers template.
 ```
-<#macro preventOrphans text icon="" class="text-nowrap">
+<#macro preventWidows text icon="" class="text-nowrap">
     <#compress>
         <#local isIcon = icon != "">
         <#local textSplit = text?split(" ")>
