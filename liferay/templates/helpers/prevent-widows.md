@@ -35,10 +35,7 @@ Copy this into your template, or add to your helpers template.
 
         ${textPre?trim}
         <span class="${class}">
-            ${textPost?trim}
-            <#if isIcon>
-                ${icon}
-            </#if>
+            ${textPost?trim}&nbsp;${icon}
         </span>
     </#compress>
 </#macro>
