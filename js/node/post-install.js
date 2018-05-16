@@ -14,6 +14,16 @@
 
     The associated Bash scripts that handle the pre-commits in both environments
     can be found in the `/bash` folder of the `ui-developer-documentation` project.
+
+    Add areference to this script in the `scripts` block of package.json to run
+    after `npm install`.
+
+    ```
+        "scripts": {
+            "postinstall": "node src/bin/post-install.js",
+            ...
+        },
+    ```
  */
 
 const fs = require('fs');

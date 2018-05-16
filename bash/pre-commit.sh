@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ##
-#  Git Pre-COmmit hook script
+#  Git Pre-Commit hook script
 #
 #  Runs linters against staged JavaScript and SCSS files, and
 #  rejects commit if errors are present.
